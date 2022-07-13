@@ -30,6 +30,7 @@ const app = new Vue(
 
         created(){
             this.getRandomEmail()
+            
             console.log(this.emails)
         },
 })
