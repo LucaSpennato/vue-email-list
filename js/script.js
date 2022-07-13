@@ -16,7 +16,7 @@ const app = new Vue(
 
             getRandomEmail: function() {
 
-                for (let index = 1; index < 10; index++) {
+                for (let index = 0; index < 10; index++) {
                     axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                     .then((response)=>{
                         console.log(response.data.response);
@@ -30,7 +30,7 @@ const app = new Vue(
 
         created(){
             this.getRandomEmail()
-            
+
             console.log(this.emails)
         },
 })
